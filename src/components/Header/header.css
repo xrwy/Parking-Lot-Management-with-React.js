@@ -1,0 +1,48 @@
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+.parking-img-text {
+    display: flex;
+    box-sizing: border-box;
+    height: max-content;
+}
+div.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 3vw;
+}
+div.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+img.parking-image {
+    height: 100%;
+    width:55%;
+}
+@media screen and (max-width:540px){
+    .parking-img-text{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .parking-img-text .text {
+        width: 100%;
+    }
+}
+@media screen and (max-width:380px){
+    .parking-img-text div.text h1 {
+        font-size: 7vw !important;
+    }
+}

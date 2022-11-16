@@ -1,0 +1,55 @@
+.del-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.del-btn-box button[type=button].del-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    color: white;
+    background-color: rgb(87, 131, 196);
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.del-btn-box button[type=button].del-btn i.fa-trash-o {
+    font-size: 1.2rem;
+}
+input[type=radio].radio-btn{
+    cursor: pointer;
+    outline: none;
+}
+button[type=button].del-btn:hover, button[type=button].radio-btn-reset:hover{
+    box-shadow: 0.3rem 0.3rem rgb(87, 131, 196,0.7);
+}
+.radio-btn-reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    color: var(--white);
+    background-color: rgb(87, 131, 196);
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.4vw;
+}
+@media screen and (max-width:604px){
+    .radio-btn-reset{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:404px){
+    .radio-btn-reset{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:300px){
+    .radio-btn-reset{
+        font-size: 4.6vw;
+    }
+}

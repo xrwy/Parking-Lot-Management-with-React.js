@@ -1,0 +1,154 @@
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.body-wrapper div.form-content {
+    width: 960px;
+}
+.body-wrapper div.app-title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+.body-wrapper div.form-box {
+    padding: 0 6px;
+}
+.body-wrapper div.date-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.body-wrapper div.form-control{
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.body-wrapper h1.title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 2.3vw;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    padding: 4px 7px;
+}
+
+.body-wrapper .theme-box .theme-btn {
+    padding: 0.6rem 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.body-wrapper .theme-box .theme-btn::first-letter {
+    text-transform: uppercase;
+}
+.body-wrapper label.labelText {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.body-wrapper input[type=text].owner,input[type=text].car,input[type=text].licensePlate {
+    width: 100%;
+    display: block;
+    margin-top: 7px;
+    padding: 10px 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    border: 1px solid #ddd;
+    outline:  none;
+}
+.body-wrapper input[type=text].owner:focus, 
+    input[type=text].car:focus, 
+    input[type=text].licensePlate:focus{
+        border: 1px solid rgb(182, 179, 179);
+}
+.body-wrapper input[type=date].enrtyDate,input[type=date].exitDate{
+    width: 100%;
+    display: block;
+    margin-top: 7px;
+    padding: 10px 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    border: 1px solid #ddd;
+    outline:  none;
+}
+.body-wrapper .submit-btn-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 8px 16px;
+}
+.body-wrapper button[type=submit],button[type=button]{
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    background-color: rgb(87, 131, 196);
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.body-wrapper button[type=submit]:hover,button[type=button]:hover {
+    box-shadow: 0.3rem 0.3rem rgb(87, 131, 196,0.7);
+}
+.body-wrapper.p-32-0{
+    padding: 2rem 0;
+}
+@media screen and (max-width:700px){
+    div.form-control{
+        padding: 0.5rem 0 !important;
+        box-sizing: border-box;
+    }
+    div.date-box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    h1.title{
+        font-size: 5vw !important;
+    }
+    .body-wrapper button[type=submit],button[type=button]{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:450px){
+    label.labelText {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width:377px) {
+    .theme-box {
+        width: 100%;
+    }
+    .body-wrapper .theme-box .theme-btn {
+        width: 100%;
+        display: block;
+    }
+    .body-wrapper h1.title {
+        width: 100%;
+        text-align: center;
+    }
+    .body-wrapper div.app-title-box {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .body-wrapper button[type=submit],button[type=button]{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:250px){
+    label.labelText {
+        font-size: 7vw !important;
+    }
+    .body-wrapper button[type=submit],button[type=button]{
+        font-size: 5vw;
+    }
+}
