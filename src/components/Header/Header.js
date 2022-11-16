@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css';
 
-const Header = React.memo(() => {
+const Header = () => {
   return (
     <header>
         <div className='header-wrapper'>
@@ -21,4 +21,4 @@ const Header = React.memo(() => {
   )
 })
 
-export default Header
+export default Header;
